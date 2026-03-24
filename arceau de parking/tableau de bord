@@ -1,0 +1,83 @@
+🟢 ÉTAPE 1 — Création du projet
+
+Objectif : créer l’application
+
+J’ai créé un projet Qt avec CMake dans Qt Creator.
+J’ai choisi une application Qt Widgets.
+
+Problème :
+Je ne savais pas quel système de compilation choisir.
+
+Solution :
+J’ai choisi CMake car c’est recommandé avec Qt 6.
+
+Résultat :
+L’application se lance avec une fenêtre vide.
+
+🟡 ÉTAPE 2 — Interface graphique
+
+Objectif : ajouter un bouton
+
+J’ai créé un bouton OPEN en C++ avec QPushButton.
+
+Problème :
+Difficulté à positionner le bouton.
+
+Solution :
+Utilisation de setGeometry().
+
+Résultat :
+Le bouton apparaît dans la fenêtre.
+
+🟠 ÉTAPE 3 — Gestion du clic
+
+Objectif : détecter le clic
+
+J’ai utilisé connect() pour relier le bouton à une fonction.
+
+Problème :
+Je ne comprenais pas les signaux/slots.
+
+Solution :
+Comprendre que :
+
+signal = clic
+slot = fonction exécutée
+
+Résultat :
+Un message s’affiche quand je clique.
+
+🔵 ÉTAPE 4 — Ajout du TCP
+
+Objectif : communiquer avec un serveur
+
+Ajout de QTcpSocket.
+
+Problème :
+Erreur de compilation (QTcpSocket inconnu).
+
+Solution :
+Ajout du module Network dans CMake.
+
+Résultat :
+Le socket est créé correctement.
+
+🟣 ÉTAPE 5 — Connexion serveur
+
+Objectif : se connecter au serveur
+
+Utilisation de :
+
+connectToHost(IP, PORT)
+
+Problème :
+Erreur de connexion.
+
+Solution :
+Compris que :
+
+le serveur n’est pas encore disponible
+pas de WiFi
+
+Résultat :
+Connexion impossible (normal).
